@@ -8,48 +8,30 @@ public class IngredientTest {
 
     @Test
     public void testGetPrice() {
-        // Arrange
         Ingredient ingredient = new Ingredient(IngredientType.SAUCE, "Ketchup", 200);
-
-        // Act
         float price = ingredient.getPrice();
-
-        // Assert
         assertEquals(200, price, 0.0);
     }
 
     @Test
     public void testGetName() {
-        // Arrange
         Ingredient ingredient = new Ingredient(IngredientType.SAUCE, "Ketchup", 200);
-
-        // Act
         String name = ingredient.getName();
-
-        // Assert
         assertEquals("Ketchup", name);
     }
 
     @Test
     public void testGetType() {
-        // Arrange
         Ingredient ingredient = new Ingredient(IngredientType.SAUCE, "Ketchup", 200);
-
-        // Act
         IngredientType type = ingredient.getType();
-
-        // Assert
         assertEquals(IngredientType.SAUCE, type);
     }
 
     @Test
     public void testConstructor() {
-        // Arrange
-        Ingredient ingredient = new Ingredient(IngredientType.FILLING, "Patty", 300);
-
-        // Assert
+        Ingredient ingredient = new Ingredient(IngredientType.FILLING, "sausage", 300);
         assertEquals(IngredientType.FILLING, ingredient.getType());
-        assertEquals("Patty", ingredient.getName());
+        assertEquals("sausage", ingredient.getName());
         assertEquals(300, ingredient.getPrice(), 0.0);
     }
 }
