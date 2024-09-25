@@ -7,7 +7,7 @@ public class BunTest {
 
     @Test
     public void testGetName() {
-        Bun bun = new Bun("black bun", 100);
+        Bun bun = new Bun("white bun", 200);
         String name = bun.getName();
         assertEquals("black bun", name);
     }
