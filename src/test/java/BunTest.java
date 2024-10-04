@@ -9,7 +9,7 @@ public class BunTest {
     public void testGetName() {
         Bun bun = new Bun("white bun", 200);
         String name = bun.getName();
-        assertEquals("black bun", name);
+        assertEquals("white bun", name);
     }
 
     @Test
